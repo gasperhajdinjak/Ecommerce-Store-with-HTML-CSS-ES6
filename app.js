@@ -19,8 +19,6 @@ const panelChild = document.querySelector(".panel-child");
 const alfaFilter = document.querySelector(".alfa-filter");
 const betaFilter = document.querySelector(".beta-filter");
 const productClicked = document.querySelectorAll(".product");
-const detailsOverlay = document.querySelector("details-overlay");
-const detailsDOM = document.querySelector(".details");
 
 // filter by searchbar
 const searchHandler = e => {
