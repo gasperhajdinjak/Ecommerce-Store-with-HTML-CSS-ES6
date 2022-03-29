@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Ecommerce Challange</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <div class="filter-btn">
+        <span class="nav-icon"> <i class="fas fa-filter"></i> </span>
+        </div>
+        <input type="text" placeholder="Search.." id="search">
+       
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- panel-->
+
+    <div id="panel" class="panel">
+      <div class="panel-child"></div>
+    </div>
+
+    <!-- hero -->
+    <div class="hero">
+      <div class="banner">
+        <h1 class="banner-title">Bringing Future to Your Tech</h1>
+        <a href="#projects" class="href">
+        <button class="banner-btn" target="projects">Shop Now</button>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- products -->
+
+    <section class="products" id="projects">
+      <div class="section-title">
+        <h2 id="ourP">our products</h2>
+      </div>
+      <div class="center-products" >
+        <!-- single product -->
+      </div>
+    </section>
+
+    <!-- cart section -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Your cart</h2>
+        <div class="cart-content">
+          <div class="cart-item">
+          
+          </div>
+          <div class="cart-footer">
+              <h3>Your total:<span class="cart-total">0€</span></h3>
+              <button class="clear-cart banner-btn">Purchase</button>
+         </div>
+      </div>
+    </div>
+
+    <!-- filter section -->
+    
+    <div class="filter-overlay">
+      <div class="filter">
+        <span class="close-filter">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Filter</h2>
+        <div class="filter-content">
+          <button class="alfa-filter"><a>Sort from A - Z</a></button>
+          <button class="beta-filter"><a>Sort from Z - A</a></button>
+          <h1>Sort by Price:</h1>
+          <div class="price-filter">
+            <input min="0" value="0" onchange="onMinPriceFilter(this.value)" type="number">
+            <span> - </span>
+            <input min="0" value="10000" onchange="onMaxPriceFilter(this.value)"  type="number">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- details -->
+
+    <div class="details-overlay">
+      <div class="details">
+         <span class="close-details">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <div class="center-products">
+        <!-- single product -->
+      </div>
+      </div>
+    </div>
+    
+
+
+  </body>
+</html>
+
